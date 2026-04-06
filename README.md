@@ -1,10 +1,10 @@
-# 🗄️ Mini Database Engine
+# Mini Database Engine
 
 A lightweight relational database engine implemented from scratch in Java. Supports table creation, CRUD operations, SQL-like querying, and 3D **Octree indexing** for accelerated multi-column lookups. Data is persisted to disk via Java serialization.
 
 ---
 
-## ✨ Features
+## Features
 
 - **Table management** — create tables with typed columns, clustering keys, and min/max constraints
 - **Full CRUD** — insert, update, delete, and select rows
@@ -18,7 +18,7 @@ A lightweight relational database engine implemented from scratch in Java. Suppo
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 DBApp.java          ← Main engine: all public API methods
@@ -39,7 +39,7 @@ Disk layout:
 
 ---
 
-## 🔑 Core API
+## Core API
 
 ### Initialize the Engine
 ```java
@@ -161,7 +161,7 @@ MaximumEntriesinOctreeNode  = 16
 
 ---
 
-## 📐 Data Model & Storage
+## Data Model & Storage
 
 | Concept | Implementation |
 |---|---|
@@ -176,7 +176,7 @@ Rows within each page are kept **sorted by the clustering key**. Inserts use bin
 
 ---
 
-## 🌳 Octree Index
+## Octree Index
 
 The Octree is a 3D spatial index that recursively subdivides a 3D bounding box into 8 equal octants. Each leaf node holds up to `MaximumEntriesinOctreeNode` entries before splitting.
 
@@ -189,7 +189,7 @@ Key capabilities:
 
 ---
 
-## 🗂️ Project Structure
+## Project Structure
 
 ```
 Mini-Database-Engine-main/
@@ -209,7 +209,7 @@ Mini-Database-Engine-main/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Compile
 
@@ -229,7 +229,7 @@ The `main` method in `DBApp.java` demonstrates the full workflow: creating a `St
 
 ---
 
-## 👥 Contributors
+## Contributors
 
 - Youssef Maged
 - Kirollos Magdy
